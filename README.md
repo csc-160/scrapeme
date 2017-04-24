@@ -1,2 +1,3 @@
-# scrapme
-As website to practice web-scraping. 
+# ScrapMe
+
+This is a sample site for student to practice web-scraping. 
