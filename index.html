@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="Scrap Me" content="">
+    <meta name="Branden Stone" content="">
+
+
+    <title>Polynomial from Name!</title>
+
+    <!-- CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+      .fraction, .top, .bottom {
+          padding: 1px;    
+      }
+
+      .fraction {
+          display: inline-block;
+          text-align: center;   
+          vertical-align: middle; 
+      }
+
+      .bottom{
+          border-top: 1px solid #000;
+          display: block;
+      }      
+    </style>
+  </head>
+
+  <body role="document" >
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Web Scrapping 101</a>
+        </div>
+      </div>
+
+    </nav>
+
+
+    <div class="container" role="main" style="padding-top: 30px; padding-bottom: 30px;">
+      <div class="page-header">
+          <h1 id="typed-name">
+            Type your name: <input type="text" id="name-input" autofocus="autofocus" autocomplete="off"></input>
+             <button id="reset" type="button" class="btn btn-lg btn-primary" >Reset</button> 
+             <button id="make-pdf" type="button" class="btn btn-lg btn-primary">Make PDF</button>
+          </h1>
+      </div>
+
+<!--      <div class="col-md-12"> 
+ -->
+        <div class="row">
+
+          <div id="container" class="col-md-10">
+            <p id="aboutme">
+              We're no strangers to love
+              You know the rules and so do I A full commitment's what I'm thinking of
+              You wouldn't get this from any other guy
+              I just want to tell you how I'm feeling
+              Gotta make you understand
+            </p>
+          </div>
+<!--        -->
+
+          <div class="col-md-2">
+            <p id="chorus">Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you</p>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <h4 id="poly-name">Python Love</h4>
+          <p id="another">We've known each other for so long
+Your heart's been aching but you're too shy to say it
+Inside we both know what's been going on
+We know the game and we're gonna play it
+And if you ask me how I'm feeling
+Don't tell me you're too blind to see</p>
+
+          <p id="getme"></p>
+        </div>
+
+    </div>
+
+
+
+<!--
+    </div>
+
+      <p>
+        <button type="button" class="btn btn-lg btn-default">Default</button>
+        <button type="button" class="btn btn-lg btn-primary">Primary</button>
+        <button type="button" class="btn btn-lg btn-success">Success</button>
+        <button type="button" class="btn btn-lg btn-info">Info</button>
+        <button type="button" class="btn btn-lg btn-warning">Warning</button>
+        <button type="button" class="btn btn-lg btn-danger">Danger</button>
+        <button type="button" class="btn btn-lg btn-link">Link</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-link">Link</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-sm btn-default">Default</button>
+        <button type="button" class="btn btn-sm btn-primary">Primary</button>
+        <button type="button" class="btn btn-sm btn-success">Success</button>
+        <button type="button" class="btn btn-sm btn-info">Info</button>
+        <button type="button" class="btn btn-sm btn-warning">Warning</button>
+        <button type="button" class="btn btn-sm btn-danger">Danger</button>
+        <button type="button" class="btn btn-sm btn-link">Link</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-xs btn-default">Default</button>
+        <button type="button" class="btn btn-xs btn-primary">Primary</button>
+        <button type="button" class="btn btn-xs btn-success">Success</button>
+        <button type="button" class="btn btn-xs btn-info">Info</button>
+        <button type="button" class="btn btn-xs btn-warning">Warning</button>
+        <button type="button" class="btn btn-xs btn-danger">Danger</button>
+        <button type="button" class="btn btn-xs btn-link">Link</button>
+      </p>
+-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script type="text/javascript" src="./lib/mathbox-bundle.js"></script>        
+    <script type="text/javascript" src="./lib/d3.js"></script>
+    <script type="text/javascript" src="./lib/fraction.min.js"></script>
+    <script type="text/javascript" src="./lib/jspdf.min.js"></script>      
+    <script type="text/javascript" src="./src/makepoly.js"></script>
+    <script type="text/javascript" src="./src/makepdf.js"></script>   
+
+
+</body>
+</html>
